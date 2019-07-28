@@ -1,7 +1,6 @@
 import ApolloClient from 'apollo-boost';
 
 import React, { Component } from 'react';
-import chuck from './nunchuck_norris.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { StyleSheet, css } from 'aphrodite';
@@ -61,7 +60,8 @@ class App extends Component {
     return (
       <div className={css(appStyles.app)}>
         <div className={css(appStyles.appHeader)}>
-          <img src={chuck} className="App-logo" alt="chuck" />
+          <img src='https://publicdomainvectors.org/photos/nunchuck_norris.png' 
+          className="App-logo" alt="chuck" />
           <h2>Chuck Norris Joke Generator</h2>
         </div>
         <Router>
