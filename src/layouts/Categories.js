@@ -11,7 +11,7 @@ const JOKE_CATEGORIES = gql`
     categories
   }
 `;
-const GRAPHQL_API_URL = 'http://localhost:8080/graphql';
+const GRAPHQL_API_URL = 'https://82td4.sse.codesandbox.io/graphql';
 const client = new ApolloClient({
   clientState: {
     resolvers: {

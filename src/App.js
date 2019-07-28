@@ -9,7 +9,7 @@ import Categories from './layouts/Categories.js';
 import Random from './layouts/RandomJoke.js';
 import CategoryJoke from './layouts/JokeByCategory.js';
 
-const GRAPHQL_API_URL = 'http://localhost:8080/graphql';
+const GRAPHQL_API_URL = 'https://82td4.sse.codesandbox.io/graphql';
 
 const client = new ApolloClient({
   clientState: {
