@@ -1,5 +1,3 @@
-import ApolloClient from 'apollo-boost';
-
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -8,18 +6,6 @@ import { StyleSheet, css } from 'aphrodite';
 import Categories from './layouts/Categories.js';
 import Random from './layouts/RandomJoke.js';
 import CategoryJoke from './layouts/JokeByCategory.js';
-
-const GRAPHQL_API_URL = 'https://82td4.sse.codesandbox.io/graphql';
-
-const client = new ApolloClient({
-  clientState: {
-    resolvers: {
-      Query: {
-      }
-    }
-  },
-  uri: GRAPHQL_API_URL
-});
 
 let appStyles = StyleSheet.create({
   app: {

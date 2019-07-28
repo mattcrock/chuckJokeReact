@@ -3,7 +3,6 @@ import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import { Query } from 'react-apollo';
 import * as React from 'react';
-import { StyleSheet, css } from 'aphrodite';
 
 const JOKE_BY_CATEGORY = gql`
   query ($category:String) {
