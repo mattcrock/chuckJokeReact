@@ -37,10 +37,6 @@ const styles = StyleSheet.create({
   }
 });
 
-function changeState(cat) {
-  history.pushState(0, "", "/joke/category?category=" + cat);
-  history.go();
-}
 const JokeCategories = () => (
   <Query query={JOKE_CATEGORIES} >
     {({ loading, error, data }) => {
